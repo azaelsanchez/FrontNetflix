@@ -1,0 +1,23 @@
+
+.movies{
+    display: grid;
+    grid-template-columns:  repeat(4,1fr);
+    color: rgb(228, 220, 220);
+    .movie{
+        background-color:rgb(52, 58, 64);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 0.7rem;
+        h2{
+            font-size: 1.2rem;
+        }
+        img{
+            
+            width: 155px;
+        }
+    }
+}
