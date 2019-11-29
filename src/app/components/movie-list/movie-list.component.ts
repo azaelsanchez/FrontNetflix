@@ -9,6 +9,7 @@ import { Movie } from 'src/app/models/movie-list';
 })
 export class MovieListComponent implements OnInit {
   peliculas:Array<Movie>=[];
+  peliculasBuscar: String = '';
   constructor(private movieService:MovieService) { }
   
   ngOnInit() {
@@ -19,7 +20,23 @@ export class MovieListComponent implements OnInit {
       res=>this.peliculas=Object.values(res),
       error=>console.log(error)
     )
-    
   }
+      peliculasBuscadas(event: any){
+        this.peliculasBuscar = event.target.value
+  
+          // this.movieService.getMoviesByGenre(this.peliculasBuscar)
+          //   .subscribe(
+          //     (data) => this.peliculas = Object.values(data),
+          //   (error) => {
+          //     console.error(error)
+              this.movieService.getMoviesByTitle(this.peliculasBuscar)
+              .subscribe(
+                (data) =>this.peliculas = Object.values(data),
+                (error) => console.error (error)
+              )
+            }
+            // )
+      }
  
-}
+
+

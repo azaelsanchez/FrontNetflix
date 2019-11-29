@@ -1,18 +1,16 @@
-export class Movie{
-    constructor(
-        public popularity: Number,
-        public vote_count: Number,
-        public video: Boolean,
-        public poster_path: String,
-        public id: String,
-        public adult: Boolean,
-        public backdrop_path: String,
-        public original_language: String,
-        public original_title:String,
-        public genre_ids: Number,
-        public title: String,
-        public vote_average: Number,
-        public overview: String,
-        public release_date: Number
-    ){}
+export interface Movie {
+    popularity: number,
+    vote_count: number,
+    video: boolean,
+    poster_path: string,
+    id: number,
+    adult: boolean,
+    backdrop_path:string,
+    original_language: string,
+    original_title: string,
+    genre_ids: Array<number>,
+    title: string,
+    vote_average: number,
+    overview: string,
+    release_date: string
 }

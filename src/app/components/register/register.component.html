@@ -1,1 +1,33 @@
-<p>register works!</p>
+
+<mat-form-field class="example-full-width">
+    <input 
+    ngModel
+    #username ="ngModel"
+    matInput 
+    placeholder="Username"
+    required
+    minlength="8"
+    name="Username">
+</mat-form-field>
+<br>
+
+<mat-form-field class="example-full-width">
+    <input matInput 
+    type="password" 
+    placeholder="Password" 
+    ngModel
+    #password ="ngModel"
+    name="Password">
+</mat-form-field> 
+<br>
+<mat-form-field class="example-full-width">
+    <input matInput 
+    type="email" 
+    placeholder="E-mail" 
+    ngModel
+    #email ="ngModel"
+    name="Email">
+</mat-form-field> 
+<br>
+<button mat-raised-button>Register</button>
+
