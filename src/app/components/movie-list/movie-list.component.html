@@ -1,13 +1,12 @@
 <form class="form-inline my-2 ">
-    <div>
-        <label class = 'search' for="Searching">Buscar película</label>
-        <input id='Searching' class='search' (keyup.enter)='peliculasBuscadas($event)' type="text" placeholder='Título, género...'>
+    <div class="asd">
+        <label class = 'search' for="Searching">Buscador</label>
+        <input id='Searching' class='search' (keyup.enter)='peliculasBuscadas($event)' type="text" placeholder=''>
     </div>
   </form>
 <div class="movies">
     <div class="movie" *ngFor="let pelicula of peliculas">
-        <img  src="https://image.tmdb.org/t/p/w200/{{pelicula.poster_path}}"
+        <img title="{{pelicula.title}}" src="https://image.tmdb.org/t/p/w200/{{pelicula.poster_path}}"
         alt="poster">
-        <!-- <h2>{{pelicula.title}}</h2> -->
     </div>
 </div>

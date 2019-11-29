@@ -12,7 +12,7 @@ import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LogoutComponent } from './components/logout/logout.component';
 import { MoviedetailComponent } from './components/moviedetail/moviedetail.component';
-import { MatInputModule, MatButtonModule } from '@angular/material';
+import { MatInputModule, MatButtonModule, MatFormFieldModule } from '@angular/material';
 
 
 @NgModule({
@@ -24,7 +24,8 @@ import { MatInputModule, MatButtonModule } from '@angular/material';
     MovieCategoriesComponent,
     HomeComponent,
     LogoutComponent,
-    MoviedetailComponent
+    MoviedetailComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -33,8 +34,10 @@ import { MatInputModule, MatButtonModule } from '@angular/material';
     HttpClientModule,
     BrowserAnimationsModule,
     MatInputModule,
-    MatButtonModule
-  
+    MatButtonModule,
+    MatFormFieldModule
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
