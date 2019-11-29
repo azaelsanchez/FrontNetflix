@@ -14,6 +14,7 @@ export class RegisterComponent implements AfterViewInit {
   user:User = {
     username:"",
     password:"",
+    email:""
     
   }
   constructor(private userService:UserService) { }
@@ -29,6 +30,7 @@ export class RegisterComponent implements AfterViewInit {
     
     this.user.username = form.value.username;
     this.user.password = form.value.password;
+    this.user.email = form.value.email;
     console.log(this.user)
     
       this.userService.register(this.user)
