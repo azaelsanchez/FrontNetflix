@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient} from '@angular/common/http';
 import { Observable } from 'rxjs'
+import { title } from 'process';
 
 @Injectable({
   providedIn: 'root'
@@ -12,8 +13,8 @@ export class MovieService {
     return this.httpClient.get(this.apiUrl + '/movie')
     
   }
-  getMovieById(id: string) {
-        return this.httpClient.get(`${this.apiUrl}/movies/id/${id}`)
+  getMovieById(_id: string) {
+        return this.httpClient.get(`${this.apiUrl}/movie/${_id}`)
       }
   
   getMoviesByTitle(title: string | String):Observable<object>{

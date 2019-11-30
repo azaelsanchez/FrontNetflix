@@ -20,7 +20,6 @@ export class LoginComponent  {
     login(){
       this.userService.login(this.user)
       .subscribe(res =>  {
-        console.log
         localStorage.setItem('user', JSON.stringify(res)), setTimeout(() => {
         location.reload(true);
       }, 1000),  setTimeout(() => {
