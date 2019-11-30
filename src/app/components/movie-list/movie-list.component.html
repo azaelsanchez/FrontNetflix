@@ -5,8 +5,12 @@
     </div>
   </form>
 <div class="movies">
+    
     <div class="movie" *ngFor="let pelicula of peliculas">
         <img title="{{pelicula.title}}" src="https://image.tmdb.org/t/p/w200/{{pelicula.poster_path}}"
         alt="poster">
+        <a routerLink="/movie/title/{{pelicula._id}}" routerLinkActive="active-link">
+            <span>Descripcion</span>
+          </a>
     </div>
 </div>

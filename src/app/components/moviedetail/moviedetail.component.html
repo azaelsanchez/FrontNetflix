@@ -1,1 +1,14 @@
-<p>moviedetail works!</p>
+<div class="movies">
+    <div class="movie">
+       <h2>{{movie[0].title}}</h2> 
+        <img src="https://image.tmdb.org/t/p/w200/{{movie[0].poster_path}}" 
+        alt="Image not found... Sorry!">
+        <p>OVERVIEW: {{movie[0].overview}}</p>
+        <p>RATE: {{movie[0].vote_average}}</p>
+        <p>POPULARITY: {{movie[0].popularity}}</p>
+        <p>RELEASE DATE: {{movie[0].release_date}}</p>
+        <a routerLink="/top_rated" routerLinkActive="active-link">
+          <span>Alquilar</span>
+        </a>
+    </div>
+</div>

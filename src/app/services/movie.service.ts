@@ -12,6 +12,9 @@ export class MovieService {
     return this.httpClient.get(this.apiUrl + '/movie')
     
   }
+  getMovieById(id: string) {
+        return this.httpClient.get(`${this.apiUrl}/movies/id/${id}`)
+      }
   
   getMoviesByTitle(title: string | String):Observable<object>{
     console.log("Buscaste "+title)
@@ -21,5 +24,6 @@ export class MovieService {
   //   console.log("Buscaste "+genre)
   //   return this.httpClient.get(`http://localhost:3000/movie/genre/${genre}`)
   //  }
+  
 }
 

@@ -1,1 +1,14 @@
-<p>movie-categories works!</p>
+<div class="movies">
+        <div class="movie">
+           <h2>{{pelicula[0].title}}</h2> 
+            <img src="https://image.tmdb.org/t/p/w200/{{pelicula[0].poster_path}}" 
+            alt="Image not found... Sorry!">
+            <p>OVERVIEW: {{pelicula[0].overview}}</p>
+            <p>RATE: {{pelicula[0].vote_average}}</p>
+            <p>POPULARITY: {{pelicula[0].popularity}}</p>
+            <p>RELEASE DATE: {{pelicula[0].release_date}}</p>
+            <a routerLink="/top_rated" routerLinkActive="active-link">
+              <span>Alquilar</span>
+            </a>
+        </div>
+    </div>

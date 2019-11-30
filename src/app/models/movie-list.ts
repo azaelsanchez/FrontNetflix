@@ -1,4 +1,5 @@
 export interface Movie {
+    _id:string,
     popularity: number,
     vote_count: number,
     video: boolean,
