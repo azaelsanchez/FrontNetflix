@@ -7,10 +7,12 @@
 <div class="movies">
     
     <div class="movie" *ngFor="let pelicula of peliculas">
-        <img title="{{pelicula.title}}" src="https://image.tmdb.org/t/p/w200/{{pelicula.poster_path}}"
+            
+        <img title="{{pelicula.title}}" src="https://image.tmdb.org/t/p/w200{{pelicula.poster_path}}"
         alt="poster">
-        <a routerLink="/movie/{{pelicula._id}}" routerLinkActive="active-link">
-            <span>Descripcion</span>
-          </a>
+        
+            <p><strong>{{pelicula.title}} </strong><br>{{pelicula.overview}}<br><br><button>Alquilar</button><br></p>
+            
+         
     </div>
 </div>
