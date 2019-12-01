@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LogoutComponent } from './components/logout/logout.component';
 import { MoviedetailComponent } from './components/moviedetail/moviedetail.component';
 import { MatInputModule, MatButtonModule, MatFormFieldModule } from '@angular/material';
+import { ProfileComponent } from './components/profile/profile.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { MatInputModule, MatButtonModule, MatFormFieldModule } from '@angular/ma
     HomeComponent,
     LogoutComponent,
     MoviedetailComponent,
+    ProfileComponent,
 
   ],
   imports: [
