@@ -30,19 +30,18 @@ export class MovieListComponent implements OnInit {
       peliculasBuscadas(event: any){
         this.peliculasBuscar = event.target.value
   
-          // this.movieService.getMoviesByGenre(this.peliculasBuscar)
-          //   .subscribe(
-          //     (data) => this.peliculas = Object.values(data),
-          //   (error) => {
-          //     console.error(error)
+          this.movieService.getMoviesByGenre(this.peliculasBuscar)
+            .subscribe(
+              (data) => this.peliculas = Object.values(data),
+            (error) => {
+              console.error(error)
               this.movieService.getMoviesByTitle(this.peliculasBuscar)
               .subscribe(
                 (data) =>this.peliculas = Object.values(data),
                 (error) => console.error (error)
               )
             }
-            // )
-      }
- 
+            )
+            }
 
-
+          } 

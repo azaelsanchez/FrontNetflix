@@ -14,6 +14,7 @@ import { LogoutComponent } from './components/logout/logout.component';
 import { MoviedetailComponent } from './components/moviedetail/moviedetail.component';
 import { MatInputModule, MatButtonModule, MatFormFieldModule } from '@angular/material';
 import { ProfileComponent } from './components/profile/profile.component';
+import { PopularsComponent } from './components/populars/populars.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { ProfileComponent } from './components/profile/profile.component';
     LogoutComponent,
     MoviedetailComponent,
     ProfileComponent,
+    PopularsComponent,
 
   ],
   imports: [

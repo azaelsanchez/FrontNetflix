@@ -21,8 +21,6 @@ export class ProfileComponent implements OnInit {
     this.token = localStorage.getItem('auth')
     this.userService.profile(this.token)
     .subscribe((data)=>{this.profile=data
-      this.pedidos= this.profile.viewedFilms})  
-
-       
+      this.pedidos= this.profile.viewedFilms})     
   }
 }

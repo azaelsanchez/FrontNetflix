@@ -11,7 +11,7 @@ import { Profile } from '../models/profile'
 })
 export class UserService {
   storagedToken: any;
-  profile(token){
+  profile(token: string){
     console.log("aqui tambien")
     this.storagedToken=JSON.parse(token)
 
